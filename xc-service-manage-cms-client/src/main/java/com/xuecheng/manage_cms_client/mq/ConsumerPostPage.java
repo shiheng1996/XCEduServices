@@ -28,5 +28,4 @@ public class ConsumerPostPage {
             pageService.savePageToServerPath(cmsPage);
         }
     }
-
 }
