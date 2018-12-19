@@ -10,8 +10,8 @@ spring:
   rabbitmq:
     host: 134.175.88.214
     port: 5672
-    username: user
-    password: password
+    username: root
+    password: root
     virtualHost: /
   #cms客户端监控的队列名称（不同的客户端监控的队列不能重复）
 xuecheng:
