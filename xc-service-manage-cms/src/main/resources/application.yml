@@ -1,0 +1,15 @@
+server:
+  port: 31001
+spring:
+  application:
+    name: xc-service-manage-cms
+  data:
+    mongodb:
+      uri: mongodb://134.175.88.214:27017
+      database: xc_cms
+  rabbitmq:
+      host: 134.175.88.214
+      port: 5672
+      username: user
+      password: password
+      virtualHost: /

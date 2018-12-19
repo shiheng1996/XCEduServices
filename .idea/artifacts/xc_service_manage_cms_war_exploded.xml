@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="xc-service-manage-cms:war exploded">
+    <output-path>$PROJECT_DIR$/xc-service-manage-cms/target/xc-service-manage-cms</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="xc-service-manage-cms" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/xc-service-manage-cms/target/xc-service-manage-cms/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="xc-service-manage-cms/web/Web" />
+    </root>
+  </artifact>
+</component>
