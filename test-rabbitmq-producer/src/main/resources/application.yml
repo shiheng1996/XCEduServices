@@ -5,6 +5,6 @@ spring:
     name: test-rabbitmq-producer
   rabbitmq:
     host: 134.175.88.214
-    username: user
-    password: password
+    username: root
+    password: root
     virtual-host: /

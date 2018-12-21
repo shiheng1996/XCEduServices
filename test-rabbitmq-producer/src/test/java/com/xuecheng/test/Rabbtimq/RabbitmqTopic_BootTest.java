@@ -18,14 +18,14 @@ public class RabbitmqTopic_BootTest {
     private RabbitTemplate rabbitTemplate;
 
       @Test
-    public void send1(){
+    public void sendSMS(){
         HashMap<Object, Object> map = new HashMap<>();
-        map.put("email","发邮件啊");
+        map.put("sms","发信息啊");
         rabbitTemplate.convertAndSend(RabbitmqConfig.EXCHANGE_TOPICS_INFORM,RabbitmqConfig.ROUTINGKEY_SMS,map);
     }
 
     @Test
-    public void sendString(){
+    public void sendEmail(){
        String  email="send email to user";
         rabbitTemplate.convertAndSend(RabbitmqConfig.EXCHANGE_TOPICS_INFORM,RabbitmqConfig.ROUTINGKEY_EMAIL,email);
     }

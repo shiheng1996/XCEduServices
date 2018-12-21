@@ -1,5 +1,4 @@
 package com.xuecheng.test.config;
-
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +13,7 @@ public class RabbitmqConfig {
     //包含通配符的routing key
     public static final String ROUTINGKEY_EMAIL="inform.aaa.email.bbb";
     public static final String ROUTINGKEY_SMS="inform.aaa.sms.bbb";
-
+//
 //    /**
 //     * 实例化 topic类型的交换机
 //     * @return
@@ -42,7 +41,7 @@ public class RabbitmqConfig {
 //     * @return
 //     */
 //    @Bean
-//    public Binding  BINDING_QUEUE_INFORM_EMAIL(@Qualifier(QUEUE_INFORM_EMAIL) Queue queue,@Qualifier(EXCHANGE_TOPICS_INFORM)Exchange exchange){
+//    public Binding  BINDING_QUEUE_INFORM_EMAIL(@Qualifier(QUEUE_INFORM_EMAIL) Queue queue, @Qualifier(EXCHANGE_TOPICS_INFORM)Exchange exchange){
 //        return BindingBuilder.bind(queue).to(exchange).with(ROUTINGKEY_EMAIL).noargs();
 //    }
 //

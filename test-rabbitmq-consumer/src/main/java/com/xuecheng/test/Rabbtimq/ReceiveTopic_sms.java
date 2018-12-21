@@ -13,6 +13,8 @@ public class ReceiveTopic_sms {
     @RabbitListener(queues = {RabbitmqConfig.QUEUE_INFORM_SMS})
     public void receive(Map aaa, Message message, Channel channel){
         System.out.println(aaa);
+        System.out.println(message);
+
     }
 
 

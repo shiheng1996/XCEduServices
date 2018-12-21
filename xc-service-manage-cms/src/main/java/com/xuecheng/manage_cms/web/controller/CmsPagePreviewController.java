@@ -26,7 +26,5 @@ public class CmsPagePreviewController extends BaseController{
                 e.printStackTrace();
             }
         }
-
     }
-
 }

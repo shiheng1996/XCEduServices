@@ -78,6 +78,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.github.tobato</groupId>
+            <artifactId>fastdfs-client</artifactId>
+            <version>1.26.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
