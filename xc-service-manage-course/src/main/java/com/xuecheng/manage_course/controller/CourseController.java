@@ -9,15 +9,23 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author Administrator
+ * @version 1.0
+ **/
 @RestController
 @RequestMapping("/course")
 public class CourseController implements CourseControllerApi {
+
     @Autowired
     CourseService courseService;
-    //查询课程计划
+
     @Override
     @GetMapping("/teachplan/list/{courseId}")
     public TeachplanNode findTeachplanList(@PathVariable("courseId") String courseId) {
         return courseService.findTeachplanList(courseId);
+
     }
+
+
 }
