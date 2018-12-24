@@ -3,6 +3,7 @@ package com.xuecheng.framework.model.response;
 import lombok.Data;
 import lombok.ToString;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -13,7 +14,7 @@ import java.util.List;
  */
 @Data
 @ToString
-public class QueryResult<T> {
+public class QueryResult<T> implements Serializable {
     //数据列表
     private List<T> list;
     //数据总数

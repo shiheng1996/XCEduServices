@@ -11,7 +11,7 @@ public class indexController {
 
     @RequestMapping("/index")
     public String index(HashMap<String,Object> map){
-        map.put("hello", "欢迎进入HTML页面");
+//        map.put("hello", "欢迎进入HTML页面");
         System.out.println("aaaa");
         return "/index";
     }
